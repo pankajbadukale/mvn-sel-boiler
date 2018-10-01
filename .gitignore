@@ -1,0 +1,9 @@
+.classpath
+.project
+.settings/*
+downloadFiles/*
+harresult.json
+httptrack
+target/*
+videoRecorded/*
+.vscode
