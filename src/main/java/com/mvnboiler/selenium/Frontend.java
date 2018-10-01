@@ -454,6 +454,11 @@ public class Frontend {
         return this;
     }
 
+    public Frontend clear(String selectors) {
+        getElement(selectors).clear();
+        return this;
+    }
+
     private WebElement getElementEle(int selType, String selector) {
         return driver.findElement(getElementEleRef(selType, selector));
     }
