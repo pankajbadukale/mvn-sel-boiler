@@ -36,7 +36,8 @@ public class App
                 ui
                 .clear("#address")
                 .setValue("#address", availAddress[i])
-                .exeJS("document.querySelector('#btnGetGpsCoordinates').style.visibility = '';");
+                .exeJS("document.querySelector('#btnGetGpsCoordinates').style.visibility = '';")
+                .exeJS("window.countConvertLimit = 2000;");
                 Thread.sleep(3000);
                 ui
                 .exeJS("document.querySelector('#btnGetGpsCoordinates').click();");;
